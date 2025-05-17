@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/01cc6b07c1.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span class="red-logo">S</span>ai.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>MERN STACK DEVELOPER</p>
+                <h1>Hi, I'm <span>Ananthasai</span> <br>from India</h1>
+            </div>
+        </div>
+    </div>
+    <!---about--->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I’m a MERN Stack Developer passionate about building full-stack web applications that are fast, responsive, and scalable. I specialize in using MongoDB, Express.js, React.js, and Node.js to create robust web solutions from front to back.
+
+I enjoy turning complex problems into clean, efficient code, and I’m always looking to learn new technologies and improve my skills. Whether it's developing REST APIs, creating interactive user interfaces, or deploying cloud-based applications, I love every part of the development process.
+
+When I’m not coding, you might find me exploring new tech trends, reading documentation (yes, really), or experimenting with side projects.
+
+</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br>Desinging Web app Interfaces</li>
+                            <li><span>CSS</span><br>Web app Developement</li>
+                            <li><span>JAVASCRIPT</span><br>Building Android/ios</li>
+                            <li><span>MongoDB</span><br>Building Android/ios</li>
+                            <li><span>Express.js</span><br>handles backend logic and routing</li>
+                            <li><span>React.js</span><br>Building user interfaces.</li>
+                            <li><span> Node.js</span><br>Building server-side of the application.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-2025</span><br>Accountant at Nani Hotels and Resorts</li>
+                            
+                            <li><span>2025-CURRENT</span><br>MERN STACK Developer at Mentor Bro</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2007-2017</span><br>St Thomas Residential Central School</li>
+                            <li><span>2017-2019</span><br>G.H.S.S Puthoor</li>
+                            <li><span>2019-2022</span><br>Kerala University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--services-->
+<div class="services" id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+        <div>
+           <i class="fa-solid fa-code-merge"></i>
+            <h2>Frontend Development</h2>
+            <p>Build responsive and interactive user interfaces.</p>
+            <ul>
+                <li>Create reusable React components.</li>
+                <li>Manage application state (e.g., using Redux or Context API).</li>
+                <li>Connect frontend to backend APIs (usually via REST or GraphQL)</li>
+                <li>Ensure mobile responsiveness and user experience (UX) optimization.</li>
+            </ul>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Backend Development</h2>
+            <p>Build and maintain the server-side logic of the application.</p>
+            <ul>
+                <li>Set up routes and APIs using Express</li>
+                <li>Handle authentication, authorization, and session management.</li>
+                <li>Implement business logic and middleware.</li>
+                <li>Ensure performance, security, and scalability of the backend.</li>
+            </ul>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <h2>Database Management</h2>
+            <p>Handle data storage, retrieval, and management.</p>
+            <ul>
+                <li>Design and create MongoDB collections and schemas.</li>
+                <li>Perform CRUD operations (Create, Read, Update, Delete).</li>
+                <li>Optimize queries and indexing for performance.</li>
+                <li>Ensure data validation and relationships using Mongoose.</li>
+            </ul>
+            <a href="#">Learn more</a>
+        </div>
+        </div>
+       
+    </div>
+</div>
+
+<!--Portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>E-commerce App</h3>
+                    <p>A modern e-commerce platform offering seamless shopping with secure payments and fast delivery.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Ai Music Generator</h3>
+                    <p>Create unique, royalty-free music in seconds with the power of AI.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Device Manager</h3>
+                    <p>Easily monitor, control, and organize all your connected devices in one place.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!--Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>ananthasai89@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>6235699483</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/anantha.sai.581"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="www.linkedin.com/in/ananthasaijr"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/call_me_sai__?igsh=dDVldXJtYmp1eHk2"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="images/mycv.pdf" download="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right"></div>
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Sai.</p>
+    </div>
+</div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyCyBJEYcuZC-pxcug5kFtgEuX7sR1sV0yFusc_v3ZRw5K3oyj1yzmFCYCBUOZ4UZyf/exec'
+
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
